@@ -33,7 +33,7 @@
           <div>
             <strong>Published:</strong> {{ formatDate(b.publishedDate) }}
           </div>
-          <p>{{b.description}}</p>
+          <p [innerHTML]= "b.description"></p>
           <div>
             <button
               mat-flat-button
